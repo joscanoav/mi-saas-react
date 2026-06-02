@@ -13,8 +13,9 @@ function App() {
       {/*Inyectamos la mitad izquierda a la pantalla */}
       <Sidebar />
       {/* Inyectamos la mitad derecha de la pantalla */}
-      <ChatArea />
+     <ChatArea />
     </div>
   )
 }
+
 export default App;
