@@ -36,10 +36,10 @@ function ChatArea() {
     try {
       // 2. CONEXIÓN AL CEREBRO DE GROQ
       // ⚠️ IMPORTANTE: Pega aquí tu API Key de Groq (suele empezar por 'gsk_')
-      const API_KEY = "copia tu api de groq"; 
-      
+  
+      //OJO - Cambiamos el texto en duro por la lectura variable de entorno de vite
+      const API_KEY = import.meta.env.VITE_GROQ_API_KEY;
       const URL = "https://api.groq.com/openai/v1/chat/completions";
-
       const respuesta = await fetch(URL, {
         method: "POST",
         headers: { 
